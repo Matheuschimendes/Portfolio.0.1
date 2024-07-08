@@ -4,7 +4,7 @@ import FotoPerfil from "@/assets/1.png";
 export function Sidebar() {
   return (
     <div
-      className="flex h-full w-full max-w-[428px] items-center justify-center p-6 pt-12 pb-0 xl:absolute xl:top-0 xl:max-w-[min(100vw,1728px)] xl:items-stretch xl:justify-start xl:p-16"
+      className="flex h-full w-full max-w-[428px] items-center justify-center p-2 pt-12 pb-0 xl:absolute xl:top-0 xl:max-w-[min(100vw,1728px)] xl:items-stretch xl:justify-start xl:p-16"
     >
       <div className="flex w-full flex-col px-4 xl:mr-20 xl:flex-1 xl:px-0 ">
         <div className="relative xl:stick ">
@@ -12,7 +12,7 @@ export function Sidebar() {
             <Image src={FotoPerfil} width={200} alt={""} />
           </div>
           <div
-            className="ml-10 w-[calc(100%-8px)] max-w-[min(500px,100%-8px)]
+            className="ml-1 w-[calc(100%-8px)] max-w-[min(500px,100%-8px)]
             xl:max-w-[min(500px,calc(100vw-1000px))]"
           >
             <div
