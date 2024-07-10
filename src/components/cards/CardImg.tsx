@@ -10,7 +10,7 @@ export function CardImg(props: PropsType) {
         alt={props.alt}
         width={props.width}
         height={props.height}
-        className=" shadow-xl rounded-3xl"
+        className="shadow-xl rounded-3xl hover:bg-sky-700"
       />
     </div>
   );

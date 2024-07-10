@@ -6,6 +6,4 @@ export type PropsType = {
     alt: string;
     width: number;
     height: number;
-    clasName: "";
-    
 };
