@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt">
     <head>
-      <link rel="icon" href="./src/app/favicon.ico" />
+      <link rel="icon" href="./src/app/assets/Capa.png" />
     </head>
     <body className={inter.className}>{children}</body>
   </html>
