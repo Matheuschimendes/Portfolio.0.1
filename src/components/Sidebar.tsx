@@ -26,9 +26,9 @@ export function Sidebar() {
                 espírito de equipe, sempre em busca de soluções ágeis e novas
                 oportunidades para contribuir com o crescimento da empresa.
               </p>
-              <p className="xl:text-base font-light">
+              {/* <p className="xl:text-base font-light">
                 👨🏻‍💻 Aplique se você precisa de clareza num mundo obscuro.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
