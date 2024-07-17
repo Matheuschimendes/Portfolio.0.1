@@ -1,4 +1,7 @@
 import Image from "next/image";
+
+import { CardImg } from "./cards/CardImg";
+
 import lpItau from "@/assets/LandingPage.png";
 import TodoList from "@/assets/TodoList.png";
 import Turistico from "@/assets/DestinoTuristico.png";
@@ -12,7 +15,7 @@ import node from "@/assets/iconSkils/svg/node.svg";
 import javascript from "@/assets/iconSkils/svg/javascript.svg";
 import linkdin from "@/assets/linkdin.png";
 import gitHub from "@/assets/github.png";
-import { CardImg } from "./cards/CardImg";
+import Whats from "@/assets/Whats.png";
 
 export function MainContent() {
   return (
@@ -129,16 +132,29 @@ export function MainContent() {
         {/* Centraliza em telas de tamanho tablet */}
         <h3 className="text-xl font-bold mb-4 mt-20">Entre em contato:</h3>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-10">
-          <div className=" border border-b-slate-300 bg-cyan-50 shadow-md rounded-3xl overflow-hidden">
+          <div
+            className=" border border-b-slate-300
+          bg-cyan-50 shadow-md rounded-3xl overflow-hidden
+          hover:border-gray-500"
+          >
             <div className="h-[150px] w-[400px]">
-              <div className="flex-1 m-5 mt-5 h-[40px] w-[40px] rounded-md">
-                <Image src={linkdin} alt={""}></Image>
+              <div className="flex-1 m-5 mt-5 rounded-md">
+                <CardImg
+                  src={linkdin}
+                  title={`linkdin`}
+                  alt=""
+                  width={50}
+                  height={50}
+                />
               </div>
               <div className="m-5">
                 <h1 className="font-normal">Linkdin</h1>
-                <div className="mt-1 h-[30px] max-w-fit bg-[#1b88c3] rounded-md items-center">
+                <div
+                  className="mt-1 h-[30px] max-w-fit
+                bg-[#1b88c3] rounded-md items-center"
+                >
                   <a
-                    className="font-extralight text-xs m-5 text-white"
+                    className="font-extralight text-xs p-3 text-white"
                     href="https://www.linkedin.com/in/matheus-chimendes/"
                   >
                     @matheuschimendes
@@ -146,29 +162,30 @@ export function MainContent() {
                 </div>
               </div>
             </div>
-            {/* <CardImg 
-              src={lpItau} 
-              title={`Foto`} 
-              alt="" 
-              width={0} 
-              height={0} /> */}
           </div>
-          <div className=" border border-b-slate-300 shadow-md rounded-3xl overflow-hidden">
+          <div
+            className=" border border-b-slate-300 shadow-md 
+          rounded-3xl overflow-hidden bg-slate-200 
+          hover:border-gray-500"
+          >
             <div className="h-[150px] w-[400px]">
-              <div className="flex-1 m-5 mt-5 h-[40px] w-[40px] rounded-md">
-              <CardImg
-                src={gitHub}
-                title={`Foto`}
-                alt=""
-                width={40}
-                height={40}
-              />
+              <div className="flex-1 m-5 mt-5 rounded-md">
+                <CardImg
+                  src={gitHub}
+                  title={`Foto`}
+                  alt=""
+                  width={50}
+                  height={50}
+                />
               </div>
               <div className="m-5">
                 <h1 className="font-normal">GitHub</h1>
-                <div className="mt-1 h-[30px] max-w-fit bg-slate-950 rounded-md items-center">
+                <div
+                  className="mt-1 h-[30px] max-w-fit bg-slate-950 
+                rounded-md items-center hover:border-gray-500"
+                >
                   <a
-                    className="font-extralight text-xs m-5 text-white"
+                    className="font-extralight text-xs p-3 text-white"
                     href="https://github.com/Matheuschimendes"
                   >
                     @matheuschimendes
@@ -176,13 +193,37 @@ export function MainContent() {
                 </div>
               </div>
             </div>
-            {/* <CardImg 
-              src={lpItau} 
-              title={`Foto`} 
-              alt="" 
-              width={0} 
-              height={0} /> */}
-          </div>         
+          </div>
+          <div
+            className=" border border-b-slate-300 bg-[#7fd0853c] 
+          shadow-md rounded-3xl overflow-hidden  hover:border-gray-500"
+          >
+            <div className="h-[150px] w-[400px] ">
+              <div className="flex-1 m-5 mt-5 rounded-md ">
+                <CardImg
+                  src={Whats}
+                  title={`Foto`}
+                  alt=""
+                  width={50}
+                  height={50}
+                />
+              </div>
+              <div className="m-5 items-center bg-">
+                <h1 className="font-normal ">WhatsApp</h1>
+                <div
+                  className="mt-1 h-[30px] max-w-fit 
+                rounded-md items-center"
+                >
+                  <a
+                    className="font-extralight text-xs "
+                    href="https://wa.me/5598996020952"
+                  >
+                    (98) 99602-0952
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
